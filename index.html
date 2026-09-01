@@ -304,7 +304,7 @@
     </div>
 
     <script>
-      const API_URL = 'http://localhost:3000/api';
+      const API_URL = 'https://rest-rec-1.onrender.com/api';
       const tokenKey = 'helpdesk_token';
 
       const authForm = document.getElementById('authForm');
@@ -585,11 +585,11 @@
       });
 
       authForm.addEventListener('submit', handleAuthSubmit);
-ticketForm.addEventListener('submit', handleTicketSubmit);
+      ticketForm.addEventListener('submit', handleTicketSubmit);
 
-toggleAuthMode();
-renderSessionState();
-loadTickets();
+      toggleAuthMode();
+      renderSessionState();
+      loadTickets();
     </script>
   </body>
 </html>
